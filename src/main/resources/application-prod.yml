@@ -1,0 +1,12 @@
+application:
+  telegram-bot-token: ${TELEGRAM_BOT_TOKEN}
+  open-ai-key: ${OPEN_AI_KEY}
+
+spring:
+  datasource:
+    url: ${POSTGRES_URL}
+
+langchain4j:
+  open-ai:
+    chat-model:
+      api-key: ${OPENAI_API_KEY}

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: rokasthelper
+  profiles:
+    active: dev
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: always
+    overwrite-existing-jobs: true
+
+langchain4j:
+  open-ai:
+    chat-model:
+      model-name: gpt-4o
+      log-requests: true
+      log-responses: true
